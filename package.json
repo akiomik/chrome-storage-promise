@@ -1,0 +1,25 @@
+{
+  "name": "chrome-storage-promise",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-webpack": "~1.4.0",
+    "babel-loader": "~5.1.2",
+    "gulp-uglify": "~1.2.0",
+    "gulp-load-plugins": "~0.10.0",
+    "karma": "~0.12.32",
+    "mocha": "~2.2.5",
+    "karma-mocha": "~0.1.10",
+    "karma-chrome-launcher": "~0.1.12",
+    "node-libs-browser": "~0.5.0",
+    "webpack": "~1.9.7",
+    "karma-webpack": "~1.5.1",
+    "karma-sinon-chai": "~0.3.0"
+  }
+}
