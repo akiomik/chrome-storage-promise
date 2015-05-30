@@ -1,6 +1,8 @@
 chrome-storage-promise
 ======================
 
+[![npm version](https://badge.fury.io/js/chrome-storage-promise.svg)](http://badge.fury.io/js/chrome-storage-promise)
+
 ## Installation
 
 ### npm
