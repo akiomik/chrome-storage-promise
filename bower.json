@@ -11,7 +11,9 @@
     "node_modules",
     "bower_components",
     "test",
-    "*.js",
+    "gulpfile.js",
+    "karma.conf.js",
+    "webpack.conf.js",
     "package.json"
   ],
   "keywords": [
