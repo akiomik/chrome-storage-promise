@@ -4,7 +4,46 @@ chrome.storage.promise = {
 
     // sync
     sync: {
-        // TODO
+        get: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.sync.get(keys, (items) => {
+                    resolve(items);
+                });
+            });
+            return promise;
+        },
+        set: (items) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.sync.set(items, () => {
+                    resolve();
+                });
+            });
+            return promise;
+        },
+        getBytesInUse: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.sync.getBytesInUse(keys, (items) => {
+                    resolve(items);
+                });
+            });
+            return promise;
+        },
+        remove: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.sync.remove(keys, () => {
+                    resolve();
+                });
+            });
+            return promise;
+        },
+        clear: () => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.sync.clear(() => {
+                    resolve();
+                });
+            });
+            return promise;
+        }
     },
 
     // local
@@ -53,7 +92,46 @@ chrome.storage.promise = {
 
     // managed
     managed: {
-        // TODO
+        get: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.managed.get(keys, (items) => {
+                    resolve(items);
+                });
+            });
+            return promise;
+        },
+        set: (items) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.managed.set(items, () => {
+                    resolve();
+                });
+            });
+            return promise;
+        },
+        getBytesInUse: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.managed.getBytesInUse(keys, (items) => {
+                    resolve(items);
+                });
+            });
+            return promise;
+        },
+        remove: (keys) => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.managed.remove(keys, () => {
+                    resolve();
+                });
+            });
+            return promise;
+        },
+        clear: () => {
+            var promise = new Promise((resolve, reject) => {
+                chrome.storage.managed.clear(() => {
+                    resolve();
+                });
+            });
+            return promise;
+        }
     },
 
     // onChanged
