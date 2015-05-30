@@ -1,6 +1,6 @@
 {
   "name": "chrome-storage-promise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A chrome.storage API wrapper that is using promise",
   "scripts": {
     "build": "gulp build",
