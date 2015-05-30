@@ -6,6 +6,12 @@
     "build": "gulp build",
     "test": "node_modules/karma/bin/karma start"
   },
+  "keywords": [
+    "chrome",
+    "extension",
+    "storage",
+    "promise"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/akiomik/chrome-storage-promise.git"
