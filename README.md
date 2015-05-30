@@ -14,7 +14,7 @@ npm install --save chrome-storage-promise
 ### bower
 
 ```bash
-npm install --save chrome-storage-promise
+bower install --save chrome-storage-promise
 ```
 
 ## Usage
