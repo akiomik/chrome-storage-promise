@@ -5,6 +5,6 @@ var config = require('./webpack.conf.js');
 gulp.task('build', function() {
     return gulp.src('')
         .pipe($.webpack(config))
-        // .pipe($.uglify())
+        .pipe($.uglify())
         .pipe(gulp.dest('dist/'));
 });
