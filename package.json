@@ -1,11 +1,24 @@
 {
   "name": "chrome-storage-promise",
   "version": "0.0.1",
-  "description": "",
+  "description": "A chrome.storage API wrapper that is using promise",
   "scripts": {
+    "build": "gulp build",
     "test": "node_modules/karma/bin/karma start"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akiomik/chrome-storage-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akiomik/chrome-storage-promise/issues"
+  },
+  "author": {
+      "name": "Akiomi Kamakura",
+      "email": "akiomik@gmail.com",
+      "url": "https://github.com/akiomik"
+  },
+  "readmeFilename": "README.md",
   "license": "MIT",
   "devDependencies": {
     "gulp": "~3.8.11",
