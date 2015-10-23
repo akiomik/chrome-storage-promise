@@ -24,6 +24,7 @@
     "email": "akiomik@gmail.com",
     "url": "https://github.com/akiomik"
   },
+  "main": "dist/chrome-storage-promise.js",
   "readmeFilename": "README.md",
   "license": "MIT",
   "devDependencies": {
