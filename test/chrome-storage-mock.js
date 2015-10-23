@@ -2,73 +2,73 @@
 
 chrome.storage = {
     sync: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 callback({foo: 'bar'});
             }, 100);
         },
-        set: function(items, callback) {
+        set: (items, callback) => {
             setTimeout(callback, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 callback(42);
             }, 100);
         },
-        remove: function(items, callback) {
+        remove: (items, callback) => {
             setTimeout(callback, 100);
         },
-        clear: function(callback) {
+        clear: (callback) => {
             setTimeout(callback, 100);
         },
     },
 
     local: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 callback({foo: 'bar'});
             }, 100);
         },
-        set: function(items, callback) {
+        set: (items, callback) => {
             setTimeout(callback, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 callback(42);
             }, 100);
         },
-        remove: function(items, callback) {
+        remove: (items, callback) => {
             setTimeout(callback, 100);
         },
-        clear: function(callback) {
+        clear: (callback) => {
             setTimeout(callback, 100);
         },
     },
 
     managed: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 callback({foo: 'bar'});
             }, 100);
         },
-        set: function(items, callback) {
+        set: (items, callback) => {
             setTimeout(callback, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 callback(42);
             }, 100);
         },
-        remove: function(items, callback) {
+        remove: (items, callback) => {
             setTimeout(callback, 100);
         },
-        clear: function(callback) {
+        clear: (callback) => {
             setTimeout(callback, 100);
         },
     },
 
     onChanged: {
-        addListener: function(callback) {
+        addListener: (callback) => {
             setTimeout(callback, 100);
         },
     },

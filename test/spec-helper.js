@@ -1,11 +1,8 @@
 'use strict';
 
-function unrequireAll(req, mod) {
-    Object.keys(require.cache).forEach(function(key) {
+export function unrequireAll() {
+    Object.keys(require.cache).forEach((key) => {
         delete require.cache[key];
     });
 }
 
-module.exports = {
-    unrequireAll: unrequireAll,
-};

@@ -2,32 +2,32 @@
 
 chrome.storage = {
     sync: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        set: function(items, callback) {
-            setTimeout(function() {
+        set: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        remove: function(items, callback) {
-            setTimeout(function() {
+        remove: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        clear: function(callback) {
-            setTimeout(function() {
+        clear: (callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
@@ -35,32 +35,32 @@ chrome.storage = {
     },
 
     local: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        set: function(items, callback) {
-            setTimeout(function() {
+        set: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        remove: function(items, callback) {
-            setTimeout(function() {
+        remove: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        clear: function(callback) {
-            setTimeout(function() {
+        clear: (callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
@@ -68,32 +68,32 @@ chrome.storage = {
     },
 
     managed: {
-        get: function(keys, callback) {
-            setTimeout(function() {
+        get: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        set: function(items, callback) {
-            setTimeout(function() {
+        set: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        getBytesInUse: function(keys, callback) {
-            setTimeout(function() {
+        getBytesInUse: (keys, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        remove: function(items, callback) {
-            setTimeout(function() {
+        remove: (items, callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
         },
-        clear: function(callback) {
-            setTimeout(function() {
+        clear: (callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
@@ -101,8 +101,8 @@ chrome.storage = {
     },
    
     onChanged: {
-        addListener: function(callback) {
-            setTimeout(function() {
+        addListener: (callback) => {
+            setTimeout(() => {
                 chrome.runtime.lastError = '42';
                 callback();
             }, 100);
