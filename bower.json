@@ -1,6 +1,6 @@
 {
   "name": "chrome-storage-promise",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "main": "dist/chrome-storage-promise.js",
   "authors": [
     "Akiomi Kamakura <akiomik@gmail.com>"
