@@ -30,6 +30,23 @@ chrome.storage.promise.local.get('foo').then(function(items) {
 });
 ```
 
+## Development
+
+### Build
+
+```
+npm install
+npm run build
+```
+
+### Test
+
+```
+npm install
+npm run build
+npm test
+```
+
 ## Lisence
 
 The MIT License.
