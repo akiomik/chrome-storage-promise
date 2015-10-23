@@ -22,12 +22,22 @@ bower install --save chrome-storage-promise
 ## Usage
 
 ```js
+// set
 chrome.storage.promise.local.set({'foo': 'bar'}).then(function() {
+  // resolved
   console.log('set');
+}, function(error) {
+  // rejected
+  console.log(error);
 });
 
+// get
 chrome.storage.promise.local.get('foo').then(function(items) {
+  // resolved
   console.log(items); // => {'foo': 'bar'}
+}, function(error) {
+  // rejected
+  console.log(error);
 });
 ```
 
