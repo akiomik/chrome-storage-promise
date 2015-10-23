@@ -7,7 +7,12 @@ chrome.storage.promise = {
         get: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.sync.get(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -15,7 +20,12 @@ chrome.storage.promise = {
         set: (items) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.sync.set(items, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -23,7 +33,12 @@ chrome.storage.promise = {
         getBytesInUse: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.sync.getBytesInUse(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -31,7 +46,12 @@ chrome.storage.promise = {
         remove: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.sync.remove(keys, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -39,7 +59,12 @@ chrome.storage.promise = {
         clear: () => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.sync.clear(() => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -51,7 +76,12 @@ chrome.storage.promise = {
         get: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.local.get(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -59,7 +89,12 @@ chrome.storage.promise = {
         set: (items) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.local.set(items, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -67,7 +102,12 @@ chrome.storage.promise = {
         getBytesInUse: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.local.getBytesInUse(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -75,7 +115,12 @@ chrome.storage.promise = {
         remove: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.local.remove(keys, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -83,7 +128,12 @@ chrome.storage.promise = {
         clear: () => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.local.clear(() => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -95,7 +145,12 @@ chrome.storage.promise = {
         get: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.managed.get(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -103,7 +158,12 @@ chrome.storage.promise = {
         set: (items) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.managed.set(items, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -111,7 +171,12 @@ chrome.storage.promise = {
         getBytesInUse: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.managed.getBytesInUse(keys, (items) => {
-                    resolve(items);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(items);
+                    }
                 });
             });
             return promise;
@@ -119,7 +184,12 @@ chrome.storage.promise = {
         remove: (keys) => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.managed.remove(keys, () => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -127,7 +197,12 @@ chrome.storage.promise = {
         clear: () => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.managed.clear(() => {
-                    resolve();
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
                 });
             });
             return promise;
@@ -139,7 +214,12 @@ chrome.storage.promise = {
         addListener: () => {
             var promise = new Promise((resolve, reject) => {
                 chrome.storage.onChanged.addListener((changes, areaName) => {
-                    resolve(changes, areaName);
+                    let err = chrome.runtime.lastError;
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(changes, areaName);
+                    }
                 });
             });
             return promise;
