@@ -4,7 +4,8 @@
   "description": "A chrome.storage API wrapper that is using promise",
   "scripts": {
     "build": "gulp build",
-    "test": "karma start"
+    "test": "karma start",
+    "test-ci": "karma start --single-run"
   },
   "keywords": [
     "chrome",
