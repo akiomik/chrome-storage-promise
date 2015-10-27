@@ -1,5 +1,7 @@
 'use strict';
 
+chrome.runtime = chrome.runtime || {};
+
 chrome.storage = {
     sync: {
         get: (keys, callback) => {
